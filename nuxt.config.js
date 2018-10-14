@@ -49,6 +49,10 @@ module.exports = {
     // See https://github.com/nuxt-community/axios-module#options
   },
 
+  route: {
+    middleware: 'auth'
+  }
+
   /*
   ** Build configuration
   */
@@ -57,7 +61,7 @@ module.exports = {
     ** You can extend webpack config here
     */
     extend(config, ctx) {
-      
+
     }
   }
 }
